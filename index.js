@@ -1,8 +1,11 @@
 const express = require('express')
 const sequelize = require('./Conexion/database')
 const Product_v6 = require('./Modelos/Products')
+const cors = require('cors')
 
 const app = express();
+
+app.use(cors())
 
 app.use(express.json());
 
